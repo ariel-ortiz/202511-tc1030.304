@@ -6,7 +6,7 @@ class Rational {
 
 public:
 
-    Rational(int numerator, int denominator);
+    Rational(int numerator, int denominator=1);
     std::string to_string();
 
 private:

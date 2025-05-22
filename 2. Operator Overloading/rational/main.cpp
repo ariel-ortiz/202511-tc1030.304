@@ -1,12 +1,20 @@
 /*
  * Para compilar:
- *       g++ *.cpp -o main
+ *       g++ *.cpp -o main && ./main
  */
 #include <iostream>
 #include "rational.h"
 
 int main() {
-    Rational a(1, 2);
+    Rational a(123, 246);
+    Rational b(-2, -6);
+    Rational c(6, 7);
+    Rational d(5);
+    Rational e(2, 4);
     std::cout << a.to_string() << "\n";
+    std::cout << b.to_string() << "\n";
+    std::cout << c.to_string() << "\n";
+    std::cout << d.to_string() << "\n";
+    std::cout << e.to_string() << "\n";
     return 0;
 }
