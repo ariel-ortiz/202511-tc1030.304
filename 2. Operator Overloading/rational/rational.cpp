@@ -52,6 +52,16 @@ Rational Rational::operator - () const
     return Rational(-_numerator, _denominator);
 }
 
+Rational Rational::operator - (const Rational& other) const
+{
+    return *this + -other;
+}
+
+Rational::operator double() const
+{
+    return static_cast<double>(_numerator) / _denominator;
+}
+
 std::ostream& operator<<(std::ostream& os, const Rational& r)
 {
     return os << r.to_string();

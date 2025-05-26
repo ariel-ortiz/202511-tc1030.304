@@ -22,9 +22,20 @@ int main() {
     // Rational a(1, 3), b(2, 3);
     // Rational c = a + b;
     // std::cout << a << " + " << b << " = " << c << "\n";
-    Rational a(1, -2);
-    Rational b = -a;
-    std::cout << a << "\n";
-    std::cout << b << "\n";
+    // Rational a(1, -2);
+    // Rational b = -a;
+    // std::cout << a << "\n";
+    // std::cout << b << "\n";
+    // Rational a(1, 2);
+    // Rational b(1, 3);
+    // Rational c = b - a;
+    // std::cout << c << "\n";
+    Rational a(1, 2);
+    Rational b(1, 3);
+    double x = a;
+    double y = static_cast<double>(b);
+    std::cout << x << "\n";
+    std::cout << y << "\n";
+
     return 0;
 }

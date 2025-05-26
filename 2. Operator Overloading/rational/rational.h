@@ -10,6 +10,8 @@ public:
     std::string to_string() const;
     Rational operator + (const Rational& other) const;
     Rational operator - () const;
+    Rational operator - (const Rational& other) const;
+    operator double() const;
 
 private:
 
