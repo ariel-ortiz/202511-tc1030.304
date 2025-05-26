@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include "rational.h"
 
 int gcd(int a, int b)
@@ -13,6 +14,10 @@ int gcd(int a, int b)
 
 Rational::Rational(int numerator, int denominator)
 {
+    if (denominator == 0) {
+        throw std::invalid_argument("Denominator cannot be zero!");
+    }
+
     int sign = 1;
     if (numerator * denominator < 0) {
         sign = -1;
