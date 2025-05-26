@@ -29,7 +29,7 @@ Rational::Rational(int numerator, int denominator)
     _denominator = denominator / factor;
 }
 
-std::string Rational::to_string()
+std::string Rational::to_string() const
 {
     if (_denominator == 1) {
         return std::to_string(_numerator);
@@ -37,4 +37,9 @@ std::string Rational::to_string()
     return std::to_string(_numerator)
         + "/"
         + std::to_string(_denominator);
+}
+
+std::ostream& operator<<(std::ostream& os, const Rational& r)
+{
+    return os << r.to_string();
 }
