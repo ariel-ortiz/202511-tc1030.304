@@ -47,6 +47,11 @@ Rational Rational::operator + (const Rational& other) const
     return Rational(numerator, denominator);
 }
 
+Rational Rational::operator - () const
+{
+    return Rational(-_numerator, _denominator);
+}
+
 std::ostream& operator<<(std::ostream& os, const Rational& r)
 {
     return os << r.to_string();

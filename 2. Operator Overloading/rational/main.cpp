@@ -19,8 +19,12 @@ int main() {
     // std::cout << d << "\n";
     // std::cout << e << "\n";
     // std::cout << f << "\n";
-    Rational a(1, 3), b(2, 3);
-    Rational c = a + b;
-    std::cout << a << " + " << b << " = " << c << "\n";
+    // Rational a(1, 3), b(2, 3);
+    // Rational c = a + b;
+    // std::cout << a << " + " << b << " = " << c << "\n";
+    Rational a(1, -2);
+    Rational b = -a;
+    std::cout << a << "\n";
+    std::cout << b << "\n";
     return 0;
 }
