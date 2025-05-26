@@ -39,6 +39,14 @@ std::string Rational::to_string() const
         + std::to_string(_denominator);
 }
 
+Rational Rational::operator + (const Rational& other) const
+{
+    int numerator = _numerator * other._denominator
+                    + _denominator * other._numerator;
+    int denominator = _denominator * other._denominator;
+    return Rational(numerator, denominator);
+}
+
 std::ostream& operator<<(std::ostream& os, const Rational& r)
 {
     return os << r.to_string();
