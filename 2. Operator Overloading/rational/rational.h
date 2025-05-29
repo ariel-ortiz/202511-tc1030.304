@@ -12,6 +12,8 @@ public:
     Rational operator - () const;
     Rational operator - (const Rational& other) const;
     operator double() const;
+    bool operator == (const Rational& other) const;
+    bool operator != (const Rational& other) const;
 
 private:
 

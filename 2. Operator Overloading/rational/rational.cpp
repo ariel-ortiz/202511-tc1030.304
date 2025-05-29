@@ -62,6 +62,16 @@ Rational::operator double() const
     return static_cast<double>(_numerator) / _denominator;
 }
 
+bool Rational::operator == (const Rational& other) const
+{
+    return _numerator == other._numerator and _denominator == other._denominator;
+}
+
+bool Rational::operator != (const Rational& other) const
+{
+    return not ((*this) == other);
+}
+
 std::ostream& operator<<(std::ostream& os, const Rational& r)
 {
     return os << r.to_string();
