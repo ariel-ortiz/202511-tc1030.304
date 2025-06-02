@@ -1,8 +1,9 @@
 #include <iostream>
-#include "figure.h"
+#include "circle.h"
 
 int main()
 {
-    Figure f1;
+    Circle c(2.0);
+    std::cout << c.to_string() << "\n";
     return 0;
 }
