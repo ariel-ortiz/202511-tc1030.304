@@ -8,3 +8,7 @@ std::string Figure::to_string() const
         + std::to_string(perimeter());
 }
 
+std::ostream& operator<<(std::ostream& os, const Figure& figure)
+{
+    return os << figure.to_string();
+}

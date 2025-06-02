@@ -4,6 +4,6 @@
 int main()
 {
     Circle c(2.0);
-    std::cout << c.to_string() << "\n";
+    std::cout << c << "\n";
     return 0;
 }
