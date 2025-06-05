@@ -11,5 +11,8 @@ int main()
     std::cout << c << "\n";
     std::cout << r << "\n";
     std::cout << s << "\n";
+    s.make_pants();
+    r = s;
+    std::cout << r << "\n";
     return 0;
 }
